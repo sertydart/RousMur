@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RousMur — цветочная мастерская в Красноярске</title>
+  <meta name="description" content="RousMur Flowers — авторские букеты, композиции и доставка цветов в Красноярске. Собираем под повод и настроение.">
+  <script>document.documentElement.className += " js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=2">
+</head>
+<body>
+
+  <!-- ======================= НАВИГАЦИЯ ======================= -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="RousMur — на главную">
+      <img src="./assets/logo.png" alt="RousMur">
+    </a>
+
+    <nav class="nav__center" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#gallery">Букеты</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="nav__menu" type="button" data-open-menu>Каталог</button>
+      <a class="btn btn--fill" href="#contacts" data-book>Заказать</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= ГЛАВНЫЙ ЭКРАН ======================= -->
+    <section class="hero">
+      <div class="hero__title">
+        <h1 class="display">Цветы,<br>которые<br>радуют</h1>
+      </div>
+
+      <div class="hero__side hero__side--left">
+        <span>Красноярск</span>
+        <span>ул. Мира, 00</span>
+      </div>
+
+      <div class="hero__side hero__side--right">
+        <span>Цветочная мастерская</span>
+        <span>Ежедневно 09:00 — 21:00</span>
+      </div>
+
+      <div class="hero__bottom">
+        <p>Собираем букеты под повод и настроение: фермерские розы, сезонная зелень, сухоцветы. Доставим по Красноярску в день заказа.</p>
+        <a class="btn btn--ghost-light" href="#contacts" data-book>Заказать букет</a>
+      </div>
+    </section>
+
+    <!-- ======================= О МАСТЕРСКОЙ ======================= -->
+    <section class="about" id="about">
+      <div class="about__inner" data-reveal>
+        <p class="eyebrow">О мастерской</p>
+        <h2 class="heading">Цветы<br>с характером</h2>
+        <p class="about__text">RousMur — небольшая мастерская, где каждый букет собирают руками. Работаем с фермерскими розами и сезонной зеленью, не повторяем композиции и подбираем палитру под ваш повод.</p>
+        <a class="btn btn--ghost-light" href="#gallery">Смотреть букеты</a>
+      </div>
+      <figure class="about__photo" data-reveal style="--d: .1s">
+        <img src="./assets/about.webp" alt="Букет роз в мастерской RousMur">
+      </figure>
+    </section>
+
+    <!-- ======================= БУКЕТЫ / ФОТО ======================= -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__head" data-reveal>
+        <p class="eyebrow">Букеты</p>
+        <h2 class="heading">Свежие.<br>Свои. Про вас.</h2>
+        <p class="gallery__text">Монобукеты, авторские композиции и корзины. Собираем под повод, бюджет и палитру — от камерного акцента до большого подарка.</p>
+      </div>
+
+      <div class="gallery__grid">
+        <figure data-reveal style="--d: 0s">
+          <img src="./assets/gallery-1.webp" alt="Букет из роз и эвкалипта">
+        </figure>
+        <figure data-reveal style="--d: .1s">
+          <img src="./assets/gallery-2.webp" alt="Букет из роз пудрового оттенка">
+        </figure>
+        <figure data-reveal style="--d: .2s">
+          <img src="./assets/gallery-3.webp" alt="Букет гипсофилы в коробке RousMur">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= КАТАЛОГ ======================= -->
+    <section class="menu" id="catalog">
+      <div class="menu__panel menu__panel--accent" data-reveal>
+        <p class="menu__label">Каталог</p>
+        <h2 class="heading">Букеты<br>и композиции</h2>
+        <p class="menu__note">Полный каталог с ценами — в мастерской и в сообществе. Онлайн-витрина готовится: ассортимент меняется каждую неделю.</p>
+        <button class="btn btn--dark" type="button" data-open-menu>Смотреть каталог</button>
+      </div>
+
+      <div class="menu__panel menu__panel--cream" data-reveal style="--d: .12s">
+        <p class="eyebrow">Что собираем</p>
+        <h2 class="heading">Под повод<br>и бюджет</h2>
+        <p class="menu__text">Монобукеты из роз, авторские сборки, коробки и корзины. Свадебная флористика — по предзаказу. Каждый букет фотографируем перед отправкой.</p>
+        <ul class="menu__list">
+          <li><span>Монобукеты и розы</span><span>—</span></li>
+          <li><span>Авторские композиции</span><span>—</span></li>
+          <li><span>Букеты в коробке и корзины</span><span>—</span></li>
+          <li><span>Свадебная флористика</span><span>—</span></li>
+        </ul>
+        <p class="menu__soon">Каталог обновляется, подробности скоро.</p>
+      </div>
+    </section>
+
+    <!-- ======================= КОНТАКТЫ ======================= -->
+    <section class="contacts" id="contacts">
+      <div class="contacts__panel">
+        <div data-reveal>
+          <p class="eyebrow">Заказ</p>
+          <h2 class="heading">Закажите<br>букет</h2>
+        </div>
+
+        <ul class="info-list" data-reveal style="--d: .08s">
+          <li><span>Адрес</span><span>Красноярск, ул. Мира, 00</span></li>
+          <li><span>Часы</span><span>Ежедневно 09:00 — 21:00</span></li>
+          <li><span>Телефон</span><span><a href="tel:+73910000000">+7 (391) 000-00-00</a></span></li>
+          <li><span>Соцсети</span><span><a href="https://vk.com/rousmur" target="_blank" rel="noopener">ВКонтакте</a></span></li>
+        </ul>
+
+        <form class="form" id="booking-form" novalidate data-reveal style="--d: .16s">
+          <div class="form__row">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="Как к вам обращаться">
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="date">Дата доставки</label>
+              <input id="date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="guests">Букет</label>
+              <select id="guests" name="guests" required>
+                <option value="mono" selected>Монобукет</option>
+                <option value="author">Авторская композиция</option>
+                <option value="box">Букет в коробке</option>
+                <option value="basket">Корзина</option>
+                <option value="wedding">Свадебная флористика</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn btn--dark" type="submit">Отправить заявку</button>
+          <p class="form__note">Свяжемся в течение 15 минут, чтобы подтвердить состав и время доставки.</p>
+          <p class="form__ok" id="form-ok" role="status">Спасибо! Заявка принята — мы свяжемся с вами для подтверждения.</p>
+        </form>
+      </div>
+
+      <div class="contacts__photo">
+        <img src="./assets/contacts.webp" alt="Магазин цветов RousMur">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> RousMur · Цветочная мастерская</span>
+    <span>Красноярск, ул. Мира, 00</span>
+    <a href="https://vk.com/rousmur" target="_blank" rel="noopener">ВКонтакте</a>
+  </footer>
+
+  <!-- Модальное окно каталога -->
+  <div class="modal" id="menu-modal" role="dialog" aria-modal="true" aria-labelledby="menu-modal-title" aria-hidden="true">
+    <div class="modal__box">
+      <p class="eyebrow">Каталог</p>
+      <h2 class="heading" id="menu-modal-title">Каталог<br>обновляется</h2>
+      <p>Подробности скоро. Актуальные букеты, цены и наличие — у флориста в мастерской, а также по телефону.</p>
+      <button class="btn btn--dark" type="button" data-close-menu>Понятно</button>
+    </div>
+  </div>
+
+  <!-- Cookie -->
+  <div class="cookie" id="cookie">
+    <p>Мы используем cookie, чтобы сайт работал корректно и мы понимали, какие разделы полезны. Продолжая просмотр, вы соглашаетесь с обработкой cookie.</p>
+    <button class="btn btn--dark" type="button" id="cookie-accept">Принять</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
